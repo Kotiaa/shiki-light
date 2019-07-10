@@ -1,0 +1,866 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+       url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+       url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+       url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+       url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/MaterialIcons-Regular.woff2) format("woff2"), url(https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/MaterialIcons-Regular.woff) format("woff"), url(https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/MaterialIcons-Regular.eot) format("eot"), url(https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/MaterialIcons-Regular.ttf) format("truetype");
+} 
+
+/* sticky_menu */
+@media screen and (min-width: 1025px) {
+  .l-top_menu-v2 { position: sticky; top: 0;
+  }
+  .l-top_menu-v2 .active .submenu {
+    max-height: calc(100vh - 46px); overflow: auto; 
+  }
+}
+/*цвет фона*/
+body { 
+  background: #fff;
+}
+/* Цвет текста ссылки по умолчанию */
+a{
+  color:#5b9ccc;
+}
+/* Цвет ссылки при наведении */
+a:hover {
+  color:#b78bc7 !important;
+  text-decoration:none !important;
+}
+
+/* Цвет ссылки при нажатии */
+  a:active {
+    color:#9BACDE !important;
+  }
+/*другие ссылки*/
+.b-abuse_request .ban-form .cancel,
+.b-ban .abuser,
+.b-bb_codes-examples .example a,
+.b-bb_codes-examples .result a,
+.b-bracket-actions > div,
+.b-bracket-actions > span,
+.b-catalog_entry-tooltip .inner a.name,
+.b-catalog_entry-tooltip .inner .line .value a,
+.b-catalog_entry-tooltip .inner .line.works .value a,
+.b-catalog_entry .cover .title,
+.b-club .name,
+.b-comment > .inner header .name-date a.name,
+.b-comments .comments-collapser,
+.b-cosplay-topic > .inner .cosplay-info .line .value a,
+.b-cosplay_gallery h3 a,
+.b-db_entry-note .name-container .name,
+.b-db_entry > .c-about .additional-links .line-container > .link,
+.b-db_entry > .c-about .additional-links .line-container > a,
+.b-dialog > .inner header .name-date a.name,
+.b-feedback-inner .about a,
+.b-form .variants .variant a,
+.b-form .cancel,
+.b-forums .forum .link-with-input .link,
+.b-forums .reload,
+.b-header_filters .filter-line a,
+.b-height_shortener .expand,
+.b-js-action,
+.b-js-link,
+.b-lang_trigger span,
+.b-link,
+.b-log_entry a,
+.b-log_entry .link,
+.b-log_entry .moderation a,
+.b-log_entry .spoiler.collapsed,
+.b-log_entry .spoiler.collapse,
+.b-log_entry .spoiler.collapse span,
+.b-log_entry .spoiler.collapsed span,
+.b-mention,
+.b-message > .inner header .name-date a.name,
+.b-nothing_here a,
+.b-options-floated a,
+.b-options-floated .link,
+.b-options-floated .action,
+.b-options-floated.mobile-desktop a,
+.b-person .name,
+.b-shiki_editor footer .unpreview,
+.b-shiki_editor footer .unpreview:not(.link),
+.b-shiki_editor footer .cancel,
+.b-shiki_editor footer .hide,
+.b-shiki_editor footer .about-bb_codes,
+.b-source .contributors .val a,
+.b-source .mal .val a,
+.b-source .source .val a,
+.b-spoiler .content .before,
+.b-spoiler .content .after,
+.b-spoiler label,
+.b-stats_bar a.title,
+.b-table a,
+.b-topic > .inner header .name-date a.name,
+.b-topic .footer-vote .vote-group .vote,
+.b-user.named_avatar .name,
+.b-user.detailed .info .image-name,
+.b-user.detailed .history .line a .event,
+.b-user16,
+header.head h1 a.back,
+header.head h2 a.back,
+header.head a.misc,
+header.head a.edit,
+.b-animes-menu .menu-topics-block .history-entry-tooltip a,
+.p-animes-files .l-content a,
+.p-mangas-files .l-content a,
+div.history .block-list li .tooltip-inner a,
+div.history .b-block_list li .tooltip-inner a,
+.p-animes_collection-index .pagination .link,
+.p-mangas_collection-index .pagination .link,
+.p-recommendations-index .pagination .link,
+.p-userlist_comparer-show .pagination .link,
+.p-contests-edit .grid,
+.p-contests .match-day .match-link a,
+.p-contests .rating .member a,
+.p-contests .results a,
+.p-contests .suggestion > a,
+.p-contests .variant > a,
+.b-contests-menu .results,
+.b-contests-menu .grid a,
+.p-contests-grid .round .match a,
+.p-contests-index .contest a,
+.p-dashboards .c-my_list .list-type > .title .link,
+.p-dashboards .c-my_list .history > .title .link,
+.p-dashboards .c-my_list .list-type > .title .switch,
+.p-dashboards .c-my_list .history > .title .switch,
+.p-dashboards .user_list .list-type > .title .link,
+.p-dashboards .user_list .history > .title .link,
+.p-dashboards .user_list .list-type > .title .switch,
+.p-dashboards .user_list .history > .title .switch,
+.p-dashboards-show .c-content .options .option,
+.p-db_entries-edit_field .cc-genres > .c-all_genres .genre:not(.included) .name,
+.p-profiles .profile-head .c-brief header .notice a,
+.p-profiles .profile-head .c-mobile-actions a,
+.p-profiles .profile-head .c-mobile-actions span,
+.p-profiles .profile-head .c-info .c-additionals div a,
+.p-profiles-edit .account .change-password a,
+.p-profiles-edit .misc .profile-action a:not(.b-button),
+.p-profiles-edit .misc .profile-action .link,
+.p-profiles-edit .misc .nickname-changes a,
+.p-profiles-edit .misc .nickname-changes .link,
+.p-profiles-edit .list .profile-action a:not(.b-button),
+.p-profiles-edit .list .profile-action .link,
+.p-profiles-edit .list .nickname-changes a,
+.p-profiles-edit .list .nickname-changes .link,
+.p-profiles-edit .list #import_form .link,
+.p-profiles-show .about a,
+.p-studios .studio .name,
+.p-translations .animes a,
+.p-user_history-index .history-page .history-interval p a,
+.p-user_rates-index .list-lines tr .name a,
+.p-userlist_comparer .comparer table .name a,
+.b-log_entry .comment-block ins,
+.p-statistics-index .forum-nav .sections a.selected,
+.p-user_rates-index .stat-categories .category,
+.b-animes-menu .menu-topics-block a.entry .name,
+.b-animes-menu .menu-topics-block .history-entry-tooltip .tooltip-details a{
+  color:#5b9ccc;
+  border-bottom-color:1px solid transparent ;
+  text-decoration:none !important;
+}
+
+.b-abuse_request .ban-form .cancel:hover,
+.b-ban .abuser:hover,
+.b-bb_codes-examples .example a:hover,
+.b-bb_codes-examples .result a:hover,
+.b-bracket-actions > div:hover,
+.b-bracket-actions > span:hover,
+.b-catalog_entry-tooltip .inner a.name:hover,
+.b-catalog_entry-tooltip .inner .line .value a:hover,
+.b-catalog_entry-tooltip .inner .line.works .value a:hover,
+.b-catalog_entry .cover .title:hover,
+.b-club .name:hover,
+.b-comment > .inner header .name-date a.name:hover,
+.b-comments .comments-collapser:hover,
+.b-cosplay-topic > .inner .cosplay-info .line .value a:hover,
+.b-cosplay_gallery h3 a:hover,
+.b-db_entry-note .name-container .name:hover,
+.b-db_entry > .c-about .additional-links .line-container > .link:hover,
+.b-db_entry > .c-about .additional-links .line-container > a:hover,
+.b-dialog > .inner header .name-date a.name:hover,
+.b-feedback-inner .about a:hover,
+.b-form .variants .variant a:hover,
+.b-form .cancel:hover,
+.b-forums .forum .link-with-input .link:hover,
+.b-forums .reload:hover,
+.b-header_filters .filter-line a:hover,
+.b-height_shortener .expand:hover,
+.b-js-action:hover,
+.b-js-link:hover,
+.b-lang_trigger span:hover,
+.b-link:hover,
+.b-log_entry a:hover,
+.b-log_entry .link:hover,
+.b-log_entry .moderation a:hover,
+.b-log_entry .spoiler.collapsed:hover,
+.b-log_entry .spoiler.collapse:hover,
+.b-log_entry .spoiler.collapse span:hover,
+.b-log_entry .spoiler.collapsed span:hover,
+.b-mention:hover,
+.b-message > .inner header .name-date a.name:hover,
+.b-nothing_here a:hover,
+.b-options-floated a:hover,
+.b-options-floated .link:hover,
+.b-options-floated .action:hover,
+.b-options-floated.mobile-desktop a:hover,
+.b-person .name:hover,
+.b-shiki_editor footer .unpreview:hover,
+.b-shiki_editor footer .unpreview:not(.link):hover,
+.b-shiki_editor footer .cancel:hover,
+.b-shiki_editor footer .hide:hover,
+.b-shiki_editor footer .about-bb_codes:hover,
+.b-source .contributors .val a:hover,
+.b-source .mal .val a:hover,
+.b-source .source .val a:hover,
+.b-spoiler label:hover,
+.b-spoiler .content:hover .before,
+.b-spoiler .content:hover .after,
+.b-stats_bar a.title:hover,
+.b-table a:hover,
+.b-topic > .inner header .name-date a.name:hover,
+.b-topic .footer-vote .vote-group .vote:hover,
+.b-user.named_avatar .name:hover,
+.b-user.detailed .info .image-name:hover,
+.b-user.detailed .history .line a .event:hover,
+.b-user16:hover,
+header.head h1 a.back:hover,
+header.head h2 a.back:hover,
+header.head a.misc:hover,
+header.head a.edit:hover,
+.b-animes-menu .menu-topics-block .history-entry-tooltip a:hover,
+.p-animes-files .l-content a:hover,
+.p-mangas-files .l-content a:hover,
+div.history .block-list li .tooltip-inner a:hover,
+div.history .b-block_list li .tooltip-inner a:hover,
+.p-animes_collection-index .pagination .link:hover,
+.p-mangas_collection-index .pagination .link:hover,
+.p-recommendations-index .pagination .link:hover,
+.p-userlist_comparer-show .pagination .link:hover,
+.p-contests-edit .grid:hover,
+.p-contests .match-day .match-link a:hover,
+.p-contests .rating .member a:hover,
+.p-contests .results a:hover,
+.p-contests .suggestion > a:hover,
+.p-contests .variant > a:hover,
+.b-contests-menu .results:hover,
+.b-contests-menu .grid a:hover,
+.p-contests-grid .round .match a:hover,
+.p-contests-index .contest a:hover,
+.p-dashboards .c-my_list .list-type > .title .link:hover,
+.p-dashboards .c-my_list .history > .title .link:hover,
+.p-dashboards .c-my_list .list-type > .title .switch:hover,
+.p-dashboards .c-my_list .history > .title .switch:hover,
+.p-dashboards .user_list .list-type > .title .link:hover,
+.p-dashboards .user_list .history > .title .link:hover,
+.p-dashboards .user_list .list-type > .title .switch:hover,
+.p-dashboards .user_list .history > .title .switch:hover,
+.p-dashboards-show .c-content .options .option:hover,
+.p-dashboards-show .c-content .options .option.selected,
+.p-db_entries-edit_field .cc-genres > .c-all_genres .genre:not(.included) .name:hover,
+.p-profiles .profile-head .c-brief header .notice a:hover,
+.p-profiles .profile-head .c-mobile-actions a:hover,
+.p-profiles .profile-head .c-mobile-actions span:hover,
+.p-profiles .profile-head .c-info .c-additionals div a:hover,
+.p-profiles-edit .account .change-password a:hover,
+.p-profiles-edit .misc .profile-action a:not(.b-button):hover,
+.p-profiles-edit .misc .profile-action .link:hover,
+.p-profiles-edit .misc .nickname-changes a:hover,
+.p-profiles-edit .misc .nickname-changes .link:hover,
+.p-profiles-edit .list .profile-action a:not(.b-button):hover,
+.p-profiles-edit .list .profile-action .link:hover,
+.p-profiles-edit .list .nickname-changes a:hover,
+.p-profiles-edit .list .nickname-changes .link:hover,
+.p-profiles-edit .list #import_form .link:hover,
+.p-profiles-show .about a:hover,
+.p-studios .studio .name:hover,
+.p-translations .animes a:hover,
+.p-user_history-index .history-page .history-interval p a:hover,
+.p-user_rates-index .list-lines tr .name a:hover,
+.p-userlist_comparer .comparer table .name a:hover,
+.p-statistics-index .forum-nav .sections a:hover,
+.block-list-alt a:hover,
+.b-block_list-alt a:hover,
+.b-catalog_entry .cover:hover,
+.b-catalog_entry .cover:hover .title,
+.b-comment > .inner .was_updated:hover,
+.b-comment header .hash:hover,
+.b-dialog > .inner .was_updated:hover,
+.b-message > .inner .was_updated:hover,
+.b-show_more:hover,
+.b-show_more-more .hide-more:hover,
+.b-topic > .inner .was_updated:hover,
+.tooltip-inner .close:hover,
+.p-animes-franchise .sticky-tooltip .close:hover,
+.p-mangas-franchise .sticky-tooltip .close:hover,
+.p-contests .b-contest_match .prev-match:hover,
+.p-contests .b-contest_match .next-match:hover,
+.p-contests .match-day .match-link.voted-none > .c-column a:hover,
+.p-contests .match-day .match-link.voted-left > .c-column:last-child a:hover,
+.p-contests .match-day .match-link.voted-right > .c-column:first-child a:hover,
+.p-contests .match-day .match-link .c-column.loser a:hover,
+.p-contests .match-day .match-link .c-column.created a:hover,
+.p-contests-grid .round .match .date a:hover,
+.p-topics header h1 a.reload:hover,
+.p-user_rates-index .l-content .order-control:hover,
+.p-user_rates-index .list-lines tr td .anime-status:hover,
+.p-user_rates-index .list-lines tr td .anime-remove:hover,
+.p-user_rates-index .list-lines tr td .anime-remove.selected,
+.p-user_rates-index .stat-categories .category:hover,
+.b-options-floated.mobile-desktop a.selected,
+.p-user_rates-index .stat-categories .category.active,
+.b-animes-menu .menu-topics-block a.entry:hover .name,
+.b-animes-menu .menu-topics-block a.entry .name:hover,
+.b-animes-menu .menu-topics-block .history-entry-tooltip .tooltip-details a:hover,
+.b-options-floated .selected:hover,
+.b-options-floated .selected.always-active:hover,
+.b-user16:hover a,
+.b-user16:hover span,
+.b-list_switchers .switcher:hover,
+.b-list_switchers .switcher:hover,
+.p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .text:hover{
+  color:#b78bc7 !important;
+  border-bottom-color:none !important;
+  text-decoration:none !important;
+}
+.b-header_filters .filter-line a:active,
+.b-person .name:active,
+.b-source .contributors .val a:active,
+.b-source .mal .val a:active,
+.b-source .source .val a:active,
+.b-animes-menu .menu-topics-block .history-entry-tooltip a:active,
+.p-animes-files .l-content a:active,
+.p-mangas-files .l-content a:active,
+div.history .block-list li .tooltip-inner a:active,
+div.history .b-block_list li .tooltip-inner a:active,
+.p-dashboards-show .c-content .options .option:active,
+.p-profiles .profile-head .c-brief header .notice a:active,
+.p-profiles .profile-head .c-mobile-actions a:active,
+.p-profiles .profile-head .c-mobile-actions span:active,
+.p-profiles .profile-head .c-info .c-additionals div a:active,
+.block-list-alt a:active,
+.b-block_list-alt a:active,
+.b-show_more:active,
+.b-show_more-more .hide-more:active,
+.p-topics .l-menu .sticky-topics .topic:active .title,
+.p-topics .l-menu .sticky-topics .topic:active .title:after,
+.p-topics .l-menu .sticky-topics .topic .title:active,
+.p-topics .l-menu .sticky-topics .topic .title:active:after,
+.p-topics .l-menu .contests .contest:active .title,
+.p-topics .l-menu .contests .contest:active .title:after,
+.p-topics .l-menu .contests .contest .title:active,
+.p-topics .l-menu .contests .contest .title:active:after,
+.p-user_rates-index .stat-categories .category:active,
+.b-options-floated .selected,
+.b-user16:active,
+.b-list_switchers .switcher.selected{
+ color:#cc7fd0 !important;
+ text-decoration:none !important;
+ border-bottom-color: none !important;
+}
+.p-profiles .profile-head .c-history .entry:hover .title {
+  text-decoration: none;
+}
+/*заголовки подразделов*/
+.headline, .subheadline,
+.midheadline:not(.magenta):not(.orange):not(.blue):not(.red):not(.green):not(.yellow),
+.headline > a,.subheadline > a,
+.midheadline:not(.magenta):not(.orange):not(.blue):not(.red):not(.green):not(.yellow) > a{
+    background: #e3f0fb;
+  	border-left: 0px solid #e3f0fb;
+    color: #70aade;
+    border-radius: 7px;
+  	text-align:center;
+}
+.headline.linkheadline>a, .linkheadline.midheadline>a, .linkheadline.subheadline>a {
+  text-decoration:none;
+}
+.headline>a:before, .midheadline>a:before, .subheadline>a:before{
+	color:inherit;
+}
+.headline > a:hover,.subheadline > a:hover,.midheadline > a:hover,.headline>a:hover:before, .midheadline>a:hover:before, .subheadline>a:hover:before {
+  	color:#555A80 !important;
+}
+.magenta,.red,.green,.yellow,.blue,.orange {
+  	border-radius: 7px;
+  	text-align:center;
+    border-left:inherit;
+}
+@media screen and (min-width:1025px){
+.subheadline {
+  line-height: 17px;}
+}
+
+/*теги*/
+.b-tag, .b-tag:hover, .b-tag[href], .b-tag[href].active, .b-tag[href]:hover,.b-tooltipped.dotted,.b-anime_status_tag.episode, .b-anime_status_tag.studio{
+	padding: 1px 3px !important;
+    border-radius: 4px;
+  	margin-left: 0;
+}
+.b-tag[href],.b-tag,.b-tooltipped.dotted,.b-catalog_entry-tooltip .inner .line .value .b-tag{
+	border-bottom-color: #f3f5f6;
+    color: #39739d;
+    background-color: #f3f5f6;
+}
+.b-anime_status_tag.episode, .b-anime_status_tag.studio{
+  	border:1px solid transparent !important;
+  	color: #39739d;	
+}
+.b-anime_status_tag.episode:hover, .b-anime_status_tag.studio:hover {
+  	background: #e3f0fb !important;
+  	color: #70aade !important;
+}
+.b-tag[href].active, .b-tag[href]:hover,.b-catalog_entry-tooltip .inner .line .value .b-tag:hover{
+    border-bottom-color: #e3f0fb !important;;
+    background: #e3f0fb !important;
+    border-left: 0px solid #e3f0fb;
+    color: #70aade !important;
+}
+.b-anime_status_tag.other{
+  	border-radius: 4px;
+}
+.p-profiles .b-tooltipped.dotted{
+  color: #39739d;
+  background-color: inherit;
+}
+
+/*округление постеров*/
+.b-catalog_entry .cover .image-decor img,.p-profiles .profile-head .c-history .entry img {
+    border-radius: 4px;
+}
+/*округление аватарок*/
+.b-user.avatar img,.p-profiles .profile-head .c-brief .avatar img,.l-top_menu-v2 .menu-dropdown.profile>span img,.b-comment>.inner header img,.l-top_menu-v2 .icon-avatar img,.p-user_rates-index .l-menu .avatar img,.b-club .logo{
+	border-radius: 50%;
+}
+/*ВЕРХНЕЕ МЕНЮ*/
+.l-top_menu-v2,.l-top_menu-v2 .menu-dropdown>span,
+.l-top_menu-v2 .menu-dropdown > span,
+.l-top_menu-v2 .submenu-triangle{
+    background: #5c6367 !important;
+  	border-radius: 0;
+}
+.l-top_menu-v2 .logo-container .logo {
+	display:none;
+}
+.l-top_menu-v2 .submenu {
+    background: #5c6367 !important; 
+    border-bottom: 1px solid #4e5257;
+    border-left: 1px solid #4e5257;
+    border-right: 1px solid #4e5257;
+    border-radius: 0 0 6px 6px;
+    -moz-border-radius:  0 0 6px 6px;
+    -webkit-border-radius: 0 0 6px 6px;  
+}
+.l-top_menu-v2 .menu-dropdown>span a:hover,.l-top_menu-v2 .menu-icon:hover{
+	color:inherit !important;
+}
+.l-top_menu-v2 .submenu > a:hover{   
+    color: #000 !important;
+}
+/*поле поиска*/
+.l-top_menu-v2 .global-search {
+    color: #fff;
+}
+.l-top_menu-v2 .global-search input{
+  	background:transparent !important;
+  	color: #000;
+}
+.l-top_menu-v2.is-search-mobile .global-search {
+    color: #000;
+}
+.l-top_menu-v2 .global-search input:focus,.l-top_menu-v2.is-search-mobile .global-search {
+  	background: #fff !important;
+ 	border: 1px solid transparent;
+    border-radius:3px;
+}
+.l-top_menu-v2 .global-search .search-results .nothing_found::before {
+    visibility:hidden;
+}
+.l-top_menu-v2 .global-search .hotkey-marker{
+    color: transparent !important;
+    border:none;
+}
+.l-top_menu-v2 .global-search .search-marker:hover::before{
+  	cursor:pointer;
+}
+.l-top_menu-v2 .global-search .clear {
+    color: #555A80 !important;
+}
+.l-top_menu-v2 .global-search .clear:hover {
+    color: #D38A8A !important;
+}
+/*темы дня на форуме*/
+.b-hot_topics-v2 {
+    border-bottom: 1px solid #eef1f2;
+  	border-radius:5px;
+    box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.18);
+}
+/*форум*/
+.p-dashboards-show .cc-news .c-news_topics .b-topic {
+    border-top-width: 3px;
+}
+.b-topic {
+    border-top: 1px solid #f3f4f6;
+}
+/*спойлеры*/
+.b-spoiler .content .inner, .b-spoiler .content .inner-prgrph {
+    border-bottom: none;
+  	background-color:#f9e5e5;
+}
+.b-spoiler .content .before:before {
+    content: ' ';
+}
+body[data-locale="ru"] .b-spoiler .content .after:before {
+    content: '• закрыть •';
+}
+body[data-locale="en"] .b-spoiler .content .after:before {
+    content: '• close •';
+}
+.b-spoiler .content .before, .b-spoiler .content .after {
+    font-size: 11px;
+    letter-spacing: 0; 
+}
+.b-spoiler label {
+    border-bottom-style: none;
+}
+.b-spoiler label:before{
+  	content:'(';
+}
+.b-spoiler label:after{
+  	content:')';
+}
+/*графики списков аниме и манги в профиле*/
+.c-lists-info{
+	font-size:14px;
+}
+.b-stats_bar {
+    line-height: 23px;
+}
+.stat_names .stat_name > a::before,.b-stats_bar .stat_names .stat_name .size::before, .b-stats_bar .stat_names .stat_name .size::after{
+    content: '';
+}
+.c-lists-info .b-stats_bar .bar {
+    height: 9px;
+}
+.b-stats_bar .bar .first, .b-stats_bar .bar .second, .b-stats_bar .bar .third {
+    color: transparent;
+}
+.b-stats_bar .stat_names .stat_name:after {
+  display: none;
+}
+.b-stats_bar .stat_names .stat_name {
+  padding: 0 1rem 0 0;
+  line-height: 2rem;
+  font-size: 13px;
+}
+.b-stats_bar .stat_names .stat_name a {
+  display: block;
+  line-height: inherit;
+}
+.p-profiles .stat_name .size {
+    padding: 0 .42rem;
+    text-align: center;
+    line-height: 21px;
+    font-weight: bold;
+    border-radius: 1rem;
+  	background: #e3f0fb;
+    color: #70aade;
+}
+.p-profiles .stat_name[data-type="dropped"] .size{	
+	background: #e5e8eb;
+    color: #8d8d8eeb;
+}
+.c-lists-info .b-stats_bar .bar {
+	-webkit-border-radius:3px;
+  	border-radius:3px;
+}
+.b-stats_bar .bar .first, .b-stats_bar .bar .second, .b-stats_bar .bar .third {
+    line-height: 14px; 	
+}
+.b-stats_bar .bar .third {
+	background:#e5e8eb;
+}
+
+/*ЗВЕЗДЫ РЕЙТИНГА*/ 
+/* пустые звезды */
+.b-rate .stars.background {
+    color: #e5e8eb;
+}
+/* при наводке звезды */
+.b-rate .stars.hover {
+  color: #b78bc7;
+  transition:all 0.3s ease;
+}
+/*цвет пустой звезды заполненного рейтинга при наводке (откат)*/
+.b-rate .stars.score.hovered{
+  color:#d1d4d8;
+}
+
+/*ЦИТАТА*/
+.b-quote,
+.b-quote .b-quote,
+.b-quote .b-quote .b-quote,
+.b-quote .b-quote .b-quote .b-quote {
+	border-left: 5px solid #70aade;
+    border-right: 0 solid transparent;
+    border-bottom: 0 solid #70aade;
+    border-top: 0 solid #70aade;
+    background: rgba(23, 96, 147, 0.06);
+}
+.b-quote .quoteable:before {
+    content: '\\_f10d';
+	font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.b-user16 img {
+    margin-top: 3px;
+  	border-radius:50%;
+}
+.b-quote .quoteable .text-ru,.b-quote .quoteable .text-en{
+  	font-size:12px;
+}
+.b-quote .quoteable .b-user16 span{
+	font-weight:bold;
+}
+@media screen and (max-width: 720px){
+  .b-quote {
+    border-left: 4px solid #299C98;}
+}
+/*поля набора текста*/
+.b-shiki_editor .body .editor textarea,.b-input input {
+    border-radius: 6px;
+}
+/*написать комментарий*/
+.b-shiki_editor .body .editor textarea{
+  	background: #fff;
+  	border: 1px solid #e6ecf0;
+}
+.b-shiki_editor .body .editor textarea:focus,.b-input input:focus{
+  	border-color: #D6E5F9;
+  	box-shadow: 0 0 0 1px #D6E5F9;
+}
+.b-shiki_editor .body .editor{
+	padding: 0px 1px;
+}
+/*кнопки*/
+.b-button,.b-form input[type=submit] {
+    background-color: #70aade;
+	border-color: transparent;
+    color: #FFF;
+  	border-radius:15px;
+  	padding: 4px 10px;
+}
+.b-button:active,.b-form input[type=submit]:active,.b-button:hover,.b-form input[type=submit]:hover{
+	background-color:#559ad8;
+}
+/*иконки*/
+.buttons .editor-smiley,.buttons .editor-quote,.buttons .editor-link,.buttons .editor-bold,.buttons .editor-italic,
+.buttons .editor-underline,.buttons .editor-strike,.buttons .editor-image,.buttons .editor-spoiler,
+.buttons .editor-file,.profile-actions .mail, .profile-actions .settings, .profile-actions .ban,.profile-actions .fav-remove,.profile-actions .talk,.profile-actions .ignore-add,.profile-actions .fav-add{
+  	padding:5px;
+}
+@media screen and (max-width:720px){
+  .buttons .editor-smiley,.buttons .editor-quote,.buttons .editor-link,.buttons .editor-bold,.buttons .editor-italic,
+.buttons .editor-underline,.buttons .editor-strike,.buttons .editor-image,.buttons .editor-spoiler,
+.buttons .editor-file{
+  	padding:2px !important;}
+}
+.buttons .editor-smiley:hover,.buttons .editor-quote:hover,.buttons .editor-link:hover,.buttons .editor-bold:hover,.buttons .editor-italic:hover,
+.buttons .editor-underline:hover,.buttons .editor-strike:hover,.buttons .editor-image:hover,.buttons .editor-spoiler:hover,
+.buttons .editor-file:hover,.profile-actions a:hover{
+  	background-color: rgba(153,192,240,0.4);
+   	color: #000 !important;
+  	border-radius:5px;
+}
+.profile-actions .mail, .profile-actions .settings, .profile-actions .ban,.profile-actions .fav-remove,.profile-actions .talk,.profile-actions .ignore-add,.profile-actions .fav-add{
+    margin-left: 5px;
+}
+/*сообщить об ошибке*/
+.b-feedback>.marker-positioner>.marker-text,.b-feedback>.marker-positioner>.marker-text:after {
+   display:none;
+}
+.b-feedback > .marker-positioner::after {
+    position: absolute;
+    font-family: 'Material Icons';
+    content: 'error_outline';
+    font-size: 30px;
+    padding: 5px;
+    top: 0;
+    width: 130px;
+    height: 30px;
+    left: -99px;
+    text-align: right;
+    z-index: 20;
+  	background-color: #e3f0fb;
+  	color: #70aade;
+  	border-radius:5px;
+}
+.b-feedback > .marker-positioner:hover::after{
+    left: 0;
+    text-decoration: none !important;
+  	background-color: #e3f0fb;
+  	font-family:inherit;
+  	content:"Сообщить об ошибке";
+  	font-size:18px;
+  	height: 40px;
+  	color: #fc575e;
+    background: #fedddf;
+  	text-align:center;
+}
+/*
+.button2:hover {
+    right: 0;
+    text-decoration: none !important;
+}
+.button2 {
+    position: fixed;
+    text-transform: uppercase;
+    text-decoration: none;
+    top: 260px;
+    width: 130px;
+    height: 50px;
+    right: -70px;
+    text-align: right;
+    padding: .8rem 1.2rem;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/512px-Steam_icon_logo.svg.png) no-repeat 10px center / 25%;
+        background-color: rgba(0, 0, 0, 0);
+    background-color: var(--b2);
+    border: 1px solid var(--b3);
+        border-top-width: ;
+        border-right-width: ;
+        border-bottom-width: ;
+        border-left-width: ;
+    border-width: 1px 0 1px 1px;
+    border-radius: 5px 0 0 5px;
+    z-index: 20;
+    transition: 1s ease;
+}
+*/
+
+
+/*тултипы*/
+.tooltip-inner{
+ border: 1px solid #e3f0fb;
+ border-radius:5px;
+ box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+}
+.dropshadow-top,.dropshadow-top-right,.dropshadow-right,.dropshadow-bottom-right,.dropshadow-bottom,.dropshadow-bottom-left,.dropshadow-left,.dropshadow-top-left {
+ background:none;
+}
+
+/*стрелочка*/
+.tooltip-arrow:before,.tooltip-left .tooltip-arrow:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    font-size: 66px;
+    color: #e5e8eb;
+    right: 0px;
+    top: 3px;
+}
+.tooltip-arrow:before{
+   content: '\\_f0d9';
+}
+.tooltip-left .tooltip-arrow:before {
+    content: '\\_f0da';
+}
+.tooltip-arrow{
+	right: 100.5%;
+}
+.tooltip-arrow, .tooltip-left .tooltip-arrow {
+  background: none;
+}
+/*время за аниме и мангой*/
+.p-profiles-show .lifetime {
+    margin-bottom: 6px;
+    line-height: 2.3;
+}
+.b-stats_bar.lifetime .bar .first {
+    background: #b78bc7;
+}
+.p-profiles-show .lifetime .cuts .cut {
+    visibility:hidden;
+}
+.p-profiles-show .lifetime .times .time.checked:before {
+	display:none;
+}
+.p-profiles-show .lifetime .times .time.checked {
+  	font-weight: bold;
+}
+
+/*активность*/
+.p-profiles-show .profile-content .graph {
+    height: 132px;
+}
+.bar.vertical {
+    border-bottom: 1px solid #e5e8eb;
+}
+.bar.simple .bar.s3 {
+	transition: 0.2s ease-out;
+ 	border-radius:3px 3px 0 0;
+}
+.bar.simple .bar.s2 {
+  	transition: 0.2s ease-out;
+ 	border-radius:3px 3px 0 0;
+}
+.bar.simple .bar.s1 {
+
+	transition: 0.2s ease-out;
+ 	border-radius:3px 3px 0 0;
+}
+.bar.simple .bar.s0 {
+	transition: 0.2s ease-out;
+ 	border-radius:3px 3px 0 0; 
+}
+
+/*достижения*/
+.b-badge img, .b-badge .no-image {
+    border-radius: 5px;
+}
+.b-achievement .c-image .inner a .border {
+  	border:0;
+}
+.b-achievement .c-image .inner a img, .b-achievement .c-image .inner a .no-image {
+    border-radius: 7px;
+}
+.b-achievement.is-badge:before {
+    bottom: 4px;
+}
+/*small fix*/
+h3 {
+    line-height: 20px;
+}
+.copyright{
+	color:#4D4F5E !important;
+}
+.links:before {	
+    content:'Shiki Light by Soul-penetrating 汚れ';
+  	position:absolute;
+  	left:16px;
+} 
+.l-footer .links {
+    text-align: center;
+}
+@media screen and (max-width:982px){
+	.links:before{
+      	bottom:17px;
+      	color:#dedede;}
+  	.l-footer .links {
+    	text-align: left;}
+  	.l-footer {
+   	 	padding-top: 28px;}
+}
