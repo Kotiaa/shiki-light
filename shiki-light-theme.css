@@ -1231,6 +1231,16 @@ input[type=checkbox]:checked:disabled,.b-input input[type=checkbox]:checked:disa
 .b-add_to_list .expanded-options .remove-trigger .text {
     color: #da3a3a;
 }
+
+
+.user_rates-minified .b-catalog_entry.planned .image-decor::before,
+.user_rates-minified .b-catalog_entry.watching .image-decor::before,
+.user_rates-minified .b-catalog_entry.completed .image-decor::before,
+.user_rates-minified .b-catalog_entry.rewatching .image-decor::before,
+.user_rates-minified .b-catalog_entry.on_hold .image-decor::before,
+.user_rates-minified .b-catalog_entry.dropped .image-decor::before {
+    border-radius: 50%;
+}
 .b-catalog_entry.planned .image-decor::before, .b-catalog_entry.watching .image-decor::before, .b-catalog_entry.completed .image-decor::before, .b-catalog_entry.rewatching .image-decor::before, .b-catalog_entry.on_hold .image-decor::before, .b-catalog_entry.dropped .image-decor::before{
   border:2px solid transparent;
 }
