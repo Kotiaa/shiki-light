@@ -882,8 +882,9 @@ select{
 .item-edit:hover:before{
     color:#555A80 !important;
 }
+@media screen and (min-width:480px){
 .b-subposter-action{
-  width:33px;
+  width:33px;}
 }
 .profile-actions .mail, .profile-actions .settings, .profile-actions .ban,.profile-actions .fav-remove,.profile-actions .talk,.profile-actions .ignore-add,.profile-actions .fav-add,.profile-actions .ignore-remove,.profile-actions{
     margin-left: 5px;
