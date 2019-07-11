@@ -1255,7 +1255,7 @@ h3 {
 .copyright{
   color:#4D4F5E !important;
 }
-.links:before { 
+.l-footer .links:before { 
     content:'Shiki Light by Soul-penetrating 汚れ';
     position:absolute;
     left:16px;
@@ -1264,7 +1264,7 @@ h3 {
     text-align: center;
 }
 @media screen and (max-width:982px){
-  .links:before{
+  .l-footer .links:before{
         bottom:17px;
         color:#dedede;}
     .l-footer .links {
