@@ -882,7 +882,7 @@ select{
 .item-edit:hover:before{
     color:#555A80 !important;
 }
-@media screen and (min-width:480px){
+@media screen and (min-width:481px){
 .b-subposter-action{
   width:33px;}
 }
