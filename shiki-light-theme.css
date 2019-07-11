@@ -817,7 +817,7 @@ body[data-locale="en"] .b-spoiler .content .after:before {
     border: 1px solid #e6ecf0;
     border-radius: 6px;
 }
-.b-shiki_editor .body .editor textarea:focus,.b-input input:focus,.b-collection_search .field input:focus,.b-input textarea:focus,.b-shiki_editor .links .link-value, .b-shiki_editor .images .link-value:focus, .b-shiki_editor .quotes .link-value:focus, .b-shiki_editor .upload .link-value:focus{
+.b-shiki_editor .body .editor textarea:focus,.b-input input:focus,.b-collection_search .field input:focus,.b-input textarea:focus,.b-shiki_editor .links .link-value:focus, .b-shiki_editor .images .link-value:focus, .b-shiki_editor .quotes .link-value:focus, .b-shiki_editor .upload .link-value:focus{
     border-color: #D6E5F9;
     box-shadow: 0 0 0 1px #D6E5F9;
 }
