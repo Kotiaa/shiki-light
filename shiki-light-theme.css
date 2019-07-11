@@ -443,9 +443,9 @@ div.history .b-block_list li .tooltip-inner a:active,
 .b-edit_styles .new_style .style_css .editor-expand:active,
 .b-edit_styles .new_style .style_css .editor-collapse:active,
 .b-form a.remove:active{
-  color:#cc7fd0 !important;
-  text-decoration:none !important;
-  border-bottom-color: none !important;
+    color:#cc7fd0 !important;
+    text-decoration:none !important;
+    border-bottom-color: none !important;
     border-bottom: none !important;
 }
 .p-profiles .profile-head .c-history .entry:hover .title,p a {
@@ -562,7 +562,7 @@ div.history .b-block_list li .tooltip-inner a:active,
     border-radius: 0;
 }
 .l-top_menu-v2 .logo-container .logo {
-  display:none;
+    display:none;
 }
 .l-top_menu-v2 .submenu {
     background: #5c6367 !important; 
@@ -574,7 +574,7 @@ div.history .b-block_list li .tooltip-inner a:active,
     -webkit-border-radius: 0 0 6px 6px;  
 }
 .l-top_menu-v2 .menu-dropdown>span a:hover,.l-top_menu-v2 .menu-icon:hover{
-  color:inherit !important;
+    color:inherit !important;
 }
 .l-top_menu-v2 .submenu > a:hover{   
     color: #000 !important;
@@ -592,7 +592,7 @@ div.history .b-block_list li .tooltip-inner a:active,
 }
 .l-top_menu-v2 .global-search input:focus,.l-top_menu-v2.is-search-mobile .global-search {
     background: #fff !important;
-  border: 1px solid transparent;
+    border: 1px solid transparent;
     border-radius:3px;
 }
 .l-top_menu-v2 .global-search .search-results .nothing_found::before {
