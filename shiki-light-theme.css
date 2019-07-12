@@ -784,7 +784,7 @@ body[data-locale="en"] .b-spoiler .content .after:before {
 .b-quote .b-quote,
 .b-quote .b-quote .b-quote,
 .b-quote .b-quote .b-quote .b-quote {
-  border-left: 5px solid #70aade;
+    border-left: 5px solid #70aade;
     border-right: 0 solid transparent;
     border-bottom: 0 solid #70aade;
     border-top: 0 solid #70aade;
@@ -792,7 +792,7 @@ body[data-locale="en"] .b-spoiler .content .after:before {
 }
 .b-quote .quoteable:before {
     content: '\\_f10d';
-  font: normal normal normal 14px/1 FontAwesome;
+    font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
@@ -809,7 +809,7 @@ body[data-locale="en"] .b-spoiler .content .after:before {
 }
 @media screen and (max-width: 720px){
   .b-quote {
-    border-left: 4px solid #299C98;}
+    border-left: 4px solid #70aade;}
 }
 /*текстовые поля*/
 .b-shiki_editor .body .editor textarea,.b-collection_search .field input,.b-input textarea,.b-input input,.b-shiki_editor .body .preview,.b-bb_codes-examples .example .textarea,.b-shiki_editor .links .link-value, .b-shiki_editor .images .link-value, .b-shiki_editor .quotes .link-value, .b-shiki_editor .upload .link-value{
