@@ -458,7 +458,7 @@ div.history .b-block_list li .tooltip-inner a:active,
 }
 .b-collection-topic>.inner .see-more:hover, .b-collection-topic>.inner .see-more:hover .circle{
     border-color:#b78bc7 !important;
-  	color:#b78bc7 !important;
+    color:#b78bc7 !important;
     text-decoration:none !important;
 }
 .b-collection-topic>.inner .see-more:active, .b-collection-topic>.inner .see-more:active .circle{
