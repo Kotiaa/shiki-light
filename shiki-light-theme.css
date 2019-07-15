@@ -33,14 +33,14 @@ a{
     color:#5b9ccc;
 }
 /* Цвет ссылки при наведении */
-a:not(.see-more):hover {
+a:hover {
     color:#b78bc7 !important;
     text-decoration:none !important;
     border-bottom-color:none !important;
     border-bottom: none !important;
 }
 /* Цвет ссылки при нажатии */
-a:not(.see-more):active {
+a:active {
     color:#9BACDE !important;
     text-decoration:none !important;
     border-bottom-color:none !important;
@@ -452,18 +452,22 @@ div.history .b-block_list li .tooltip-inner a:active,
     text-decoration: none;
 }
 /*рамка*/
-.b-collection-topic>.inner .see-more {
-    border: 2px solid #e3f0fb;
-    border-radius: 5px;
-}
 .b-collection-topic>.inner .see-more:hover, .b-collection-topic>.inner .see-more:hover .circle{
-    border-color:#b78bc7 !important;
+    border-color:transparent !important;
     color:#b78bc7 !important;
     text-decoration:none !important;
+  	background-color: #e3f0fb;
+}
+@media screen and (min-width: 768px){
+.b-collection-topic>.inner .see-more:active, .b-collection-topic>.inner .see-more:active .circle{
+  	color:#9BACDE !important;
+  	border-color:transparent !important;
+  	background-color: #e3e5fb;}
 }
 .b-collection-topic>.inner .see-more:active, .b-collection-topic>.inner .see-more:active .circle{
   	color:#9BACDE !important;
-  	border-color::#9BACDE !important;
+  	border-color:transparent !important;
+  	background-color: #e3e5fb;
 }
 /*заголовки подразделов*/
 .headline, .subheadline,
