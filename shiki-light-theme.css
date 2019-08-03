@@ -173,7 +173,8 @@ div.history .b-block_list li .tooltip-inner a,
 header.head h1 a.back::before,
 header.head h2 a.back::before,
 .b-form a.remove,
-.b-list_switchers .switcher{
+.b-list_switchers .switcher,
+.b-link,.b-oauth_application .name-logo .name{
     color:#5b9ccc !important;
     border-bottom-color:none !important;
     border-bottom: none !important;
@@ -396,7 +397,8 @@ header.head a.edit:hover,
 .p-topics .l-menu .clubs .entry:hover .title,
 .b-mention:hover span,
 .b-bb_codes-examples .example a:hover,
-.b-bb_codes-examples .result a:hover{
+.b-bb_codes-examples .result a:hover,
+.b-oauth_application .name-logo .name:hover{
     color:#b78bc7 !important;
     border-bottom-color:none !important;
     border-bottom: none !important;
