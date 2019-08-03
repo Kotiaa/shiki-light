@@ -397,8 +397,7 @@ header.head a.edit:hover,
 .p-topics .l-menu .clubs .entry:hover .title,
 .b-mention:hover span,
 .b-bb_codes-examples .example a:hover,
-.b-bb_codes-examples .result a:hover,
-.b-oauth_application .name-logo .name:hover{
+.b-bb_codes-examples .result a:hover{
     color:#b78bc7 !important;
     border-bottom-color:none !important;
     border-bottom: none !important;
