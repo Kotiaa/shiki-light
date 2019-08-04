@@ -529,7 +529,7 @@ div.history .b-block_list li .tooltip-inner a:active,
     border:1px solid transparent !important;
     color: #39739d; 
 }
-.b-anime_status_tag.episode:hover, .b-anime_status_tag.studio:hover {
+.b-anime_status_tag.studio:hover {
     background: #e3f0fb !important;
     color: #70aade !important;
 }
@@ -567,8 +567,7 @@ div.history .b-block_list li .tooltip-inner a:active,
 }
 /*ВЕРХНЕЕ МЕНЮ*/
 .l-top_menu-v2,.l-top_menu-v2 .menu-dropdown>span,
-.l-top_menu-v2 .menu-dropdown > span,
-.l-top_menu-v2 .submenu-triangle{
+.l-top_menu-v2 .menu-dropdown > span{
     background: #5c6367 !important;
     border-radius: 0;
 }
@@ -577,18 +576,24 @@ div.history .b-block_list li .tooltip-inner a:active,
 }
 .l-top_menu-v2 .submenu {
     background: #5c6367 !important; 
-    border-bottom: 1px solid #4e5257;
-    border-left: 1px solid #4e5257;
-    border-right: 1px solid #4e5257;
+    border: none;
     border-radius: 0 0 6px 6px;
     -moz-border-radius:  0 0 6px 6px;
     -webkit-border-radius: 0 0 6px 6px;  
 }
-.l-top_menu-v2 .menu-dropdown>span a:hover,.l-top_menu-v2 .menu-icon:hover{
+.l-top_menu-v2 .menu-icon:hover{
     color:inherit !important;
 }
-.l-top_menu-v2 .submenu > a:hover{   
-    color: #000 !important;
+.l-top_menu-v2 .submenu > a:hover,.l-top_menu-v2 .menu-dropdown>span a:hover{   
+    color: #fff !important;
+    transition: background 0.2s ease;
+    background-color: #4e5257 !important;
+}
+/*значок турнира и новой почты*/
+.l-top_menu-v2 .menu-icon.contest:after, .l-top_menu-v2 .menu-icon.mail:after {
+    background: #70aade;
+    border: none;
+    color: #fff;
 }
 /*поле поиска*/
 .l-top_menu-v2 .global-search {
@@ -907,9 +912,16 @@ select{
 .b-replies {
     position: absolute;
     right: 1px;
+    padding: 1px 6px 3px 12px;
 }
 .b-comment>.inner header .name-date {
     line-height: 2;
+}
+.b-message>.inner header {
+    margin-bottom: 4px;
+}
+.b-topic>.inner header {
+    margin-bottom: 7px;
 }
 /*кнопка меню на мобильном*/
 .l-page .menu-toggler .toggler{
