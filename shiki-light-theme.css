@@ -595,6 +595,9 @@ div.history .b-block_list li .tooltip-inner a:active,
     border: none;
     color: #fff;
 }
+.l-top_menu-v2 .submenu>a.icon-mail:hover span.unread span{
+  color:#fff;
+}
 /*поле поиска*/
 .l-top_menu-v2 .global-search {
     color: #fff;
