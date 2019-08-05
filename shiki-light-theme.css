@@ -590,7 +590,8 @@ div.history .b-block_list li .tooltip-inner a:active,
     background-color: #4e5257 !important;
 }
 /*значок турнира и новой почты*/
-.l-top_menu-v2 .menu-icon.contest:after, .l-top_menu-v2 .menu-icon.mail:after {
+.l-top_menu-v2 .menu-icon.contest:after, .l-top_menu-v2 .menu-icon.mail:after,
+.l-top_menu-v2 .menu-dropdown > span[data-unread_count]::after {
     background: #70aade;
     border: none;
     color: #fff;
