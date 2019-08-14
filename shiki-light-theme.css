@@ -1092,7 +1092,7 @@ div#rates_statuses_stats.bar.simple.horizontal div.bar.s0.min{
 .b-height_shortener .expand span,.b-edit_styles .edit_style .style_css .editor-expand, .b-edit_styles .edit_style .style_css .editor-collapse, .b-edit_styles .new_style .style_css .editor-expand, .b-edit_styles .new_style .style_css .editor-collapse {
     border-bottom: none;
 }
-.p-animes-show .other-names.click-loader, .p-mangas-show .other-names.click-loader, .p-ranobe-show .other-names.click-loader,.b-comments .comments-loader, .b-comments .comments-hider, .b-comments .comments-expander,.b-forum .faye-loader,.collapsed,.collapsed + .spoiler .hide-expanded,.b-comments .faye-loader{
+.p-animes-show .other-names, .p-mangas-show .other-names, .p-ranobe-show .other-names,.b-comments .comments-loader, .b-comments .comments-hider, .b-comments .comments-expander,.b-forum .faye-loader,.collapsed,.collapsed + .spoiler .hide-expanded,.b-comments .faye-loader{
     border-radius: 7px;
 }
 
