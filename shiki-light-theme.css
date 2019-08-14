@@ -961,12 +961,19 @@ select{
     text-decoration: none !important;
     background-color: #e3f0fb;
     font-family:inherit;
-    content:"Сообщить об ошибке";
     font-size:18px;
-    height: 40px;
     color: #fc575e;
     background: #fedddf;
     text-align:center;
+}
+body[data-locale="ru"] .b-feedback > .marker-positioner:hover::after{
+  	content:"Сообщить об ошибке";
+  	height: 40px;
+}
+body[data-locale="en"] .b-feedback > .marker-positioner:hover::after{
+  	content:"Report a bug";
+    height: 25px;
+    padding-top: 10px;
 }
 /*тултипы*/
 .tooltip-inner{
