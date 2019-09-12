@@ -559,7 +559,7 @@ div.history .b-block_list li .tooltip-inner a:active,
     border-radius: 4px;
 }
 /*округление аватарок*/
-.b-user.avatar img,.p-profiles .profile-head .c-brief .avatar img,.l-top_menu-v2 .menu-dropdown.profile>span img,.b-comment>.inner header img,.l-top_menu-v2 .icon-avatar img,.p-user_rates-index .l-menu .avatar img,.b-club .logo,.b-user.avatar img, .b-user.named_avatar img, .b-user.avatar_fixed_margin img,.p-collections .b-topic>.inner header img,.p-topics .l-menu .clubs .entry img {
+.b-user.avatar img,.p-profiles .profile-head .c-brief .avatar img,.l-top_menu-v2 .menu-dropdown.profile>span img,.b-comment>.inner header img,.l-top_menu-v2 .icon-avatar img,.p-user_rates-index .l-menu .avatar img,.b-club .logo,.b-user.avatar img, .b-user.named_avatar img, .b-user.avatar_fixed_margin img,.p-collections .b-topic>.inner header img,.p-topics .l-menu .clubs .entry img,.b-message > .inner header img,.b-dialog > .inner header img{
     border-radius: 50%;
 }
 .b-modal>.inner {
