@@ -892,6 +892,7 @@ select{
 }
 .b-form input[type=submit]:active,.b-button:hover,.b-form input[type=submit]:hover{
     background-color:#559ad8;
+    color:#fff !important;
 }
 
 /*иконки*/
@@ -1307,6 +1308,11 @@ input[type=checkbox]:checked:disabled,.b-input input[type=checkbox]:checked:disa
 }
 .b-catalog_entry.planned .image-decor::before, .b-catalog_entry.watching .image-decor::before, .b-catalog_entry.completed .image-decor::before, .b-catalog_entry.rewatching .image-decor::before, .b-catalog_entry.on_hold .image-decor::before, .b-catalog_entry.dropped .image-decor::before{
     border:2px solid transparent;
+}
+/*страница избранного*/
+.p-profiles-favorites .cc-favourites.sortable .b-catalog_entry:hover:before{
+  background: #70aade;
+  color:#fff;
 }
 
 /*small fix*/
