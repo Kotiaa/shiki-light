@@ -886,10 +886,14 @@ select{
     background-color: #eeeef1a8;
     color: #5e676f;
 }
-.b-button:active,.b-form input[type=submit]:active,.b-button:hover,.b-form input[type=submit]:hover,.b-link_button.dark:active,.b-link_button.dark:hover,.b-link_button:hover,.b-link_button:active,.b-poll .poll-actions .vote:hover, .b-poll .poll-actions .abstain:hover{
+.b-button:active,.b-link_button.dark:active,.b-link_button.dark:hover,.b-link_button:hover,.b-link_button:active,.b-poll .poll-actions .vote:hover, .b-poll .poll-actions .abstain:hover{
     background-color:#688daf;
     color:#fff !important;
 }
+.b-form input[type=submit]:active,.b-button:hover,.b-form input[type=submit]:hover{
+    background-color:#559ad8;
+}
+
 /*иконки*/
 .buttons .editor-smiley,.buttons .editor-quote,.buttons .editor-link,.buttons .editor-bold,.buttons .editor-italic,
 .buttons .editor-underline,.buttons .editor-strike,.buttons .editor-image,.buttons .editor-spoiler,
@@ -940,12 +944,14 @@ select{
 .b-comment>.inner header .name-date {
     line-height: 2;
 }
+/*
 .b-message>.inner header {
     margin-bottom: 4px;
 }
 .b-topic>.inner header {
     margin-bottom: 7px;
-}
+}*/
+
 .b-comment>.inner {
     min-height: 64px;
 }
