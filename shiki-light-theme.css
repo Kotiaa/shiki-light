@@ -397,7 +397,9 @@ header.head a.edit:hover,
 .p-topics .l-menu .clubs .entry:hover .title,
 .b-mention:hover span,
 .b-bb_codes-examples .example a:hover,
-.b-bb_codes-examples .result a:hover{
+.b-bb_codes-examples .result a:hover,
+.p-dashboards-show .headline .buttons .options:hover, 
+.b-topic.b-news_wall-topic.b-news-topic>.inner>a:hover .name-date .name{
     color:#b78bc7 !important;
     border-bottom-color:none !important;
     border-bottom: none !important;
@@ -443,7 +445,9 @@ div.history .b-block_list li .tooltip-inner a:active,
 .b-edit_styles .edit_style .style_css .editor-collapse:active,
 .b-edit_styles .new_style .style_css .editor-expand:active,
 .b-edit_styles .new_style .style_css .editor-collapse:active,
-.b-form a.remove:active{
+.b-form a.remove:active,
+.p-dashboards-show .headline .buttons .options:active,
+.b-topic.b-news_wall-topic.b-news-topic>.inner>a:active .name-date .name{ 
     color:#cc7fd0 !important;
     text-decoration:none !important;
     border-bottom-color: none !important;
@@ -481,6 +485,9 @@ div.history .b-block_list li .tooltip-inner a:active,
     border-radius: 7px;
     text-align:center;
 }
+.p-dashboards-show .subheadline.orange a{
+  color: #70aade;
+}
 .headline.linkheadline>a, .linkheadline.midheadline>a, .linkheadline.subheadline>a {
     text-decoration:none;
 }
@@ -490,6 +497,7 @@ div.history .b-block_list li .tooltip-inner a:active,
 .headline > a:hover,.subheadline > a:hover,.midheadline > a:hover,.headline>a:hover:before, .midheadline>a:hover:before, .subheadline>a:hover:before {
     color:#555A80 !important;
 }
+/*???*/
 .midheadline.magenta,.midheadline.red,.midheadline.green,.midheadline.yellow,.midheadline.blue,.midheadline.orange,.midheadline.purple {
     border-radius: 7px;
     text-align:center;
@@ -555,7 +563,8 @@ div.history .b-block_list li .tooltip-inner a:active,
     border-radius: 5px;
 }
 /*округление постеров*/
-.b-catalog_entry .cover .image-decor img,.p-profiles .profile-head .c-history .entry img,.b-db_entry-variant-list_item .image img,.b-menu_logo img,.b-topic>.inner header img,.b-db_entry>.c-image img {
+.b-catalog_entry .cover .image-decor img,.p-profiles .profile-head .c-history .entry img,.b-db_entry-variant-list_item .image img,.b-menu_logo img,.b-topic>.inner header img,.b-db_entry>.c-image img,
+.b-topic.b-news_wall-topic.b-news-topic>.inner footer .b-shiki_swiper{
     border-radius: 4px;
 }
 /*округление аватарок*/
@@ -665,6 +674,7 @@ div.history .b-block_list li .tooltip-inner a:active,
     border-bottom: 1px solid #eef1f2;
     border-radius:5px;
     box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.18);
+    background:transparent;
 }
 /*форум*/
 .p-dashboards-show .cc-news .c-news_topics .b-topic {
@@ -865,15 +875,19 @@ select{
     border: none;
 }
 .b-link_button.dark {
-    background-color: #70aade;
-    border-color: #70aade;
+    background-color: #7aa5cc;
+    border-color: #7aa5cc;
+}
+/*при наводке на серые кнопки на главной странице*/
+.b-link_button.dark-2:hover{
+   background-color: #3c556b;
 }
 .b-link_button {
     background-color: #eeeef1a8;
     color: #5e676f;
 }
 .b-button:active,.b-form input[type=submit]:active,.b-button:hover,.b-form input[type=submit]:hover,.b-link_button.dark:active,.b-link_button.dark:hover,.b-link_button:hover,.b-link_button:active,.b-poll .poll-actions .vote:hover, .b-poll .poll-actions .abstain:hover{
-    background-color:#559ad8;
+    background-color:#688daf;
     color:#fff !important;
 }
 /*иконки*/
@@ -1122,6 +1136,7 @@ div#rates_statuses_stats.bar.simple.horizontal div.bar.s0.min{
     color: #70aade;
     border-radius: 7px;
     padding: 1px 7px !important;
+    margin:0 2px; 
 }
 .b-topic .footer-vote {
     background: #e3f0fb;
