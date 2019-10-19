@@ -956,6 +956,9 @@ select{
 .b-comment>.inner {
     min-height: 64px;
 }
+.b-comment{
+	overflow: inherit;
+}
 /*кнопка меню на мобильном*/
 .l-page .menu-toggler .toggler{
     background: #e3f0fb;
