@@ -946,6 +946,9 @@ select{
 .b-topic>.inner header {
     margin-bottom: 7px;
 }
+.b-comment>.inner {
+    min-height: 64px;
+}
 /*кнопка меню на мобильном*/
 .l-page .menu-toggler .toggler{
     background: #e3f0fb;
