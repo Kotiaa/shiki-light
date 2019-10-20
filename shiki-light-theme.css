@@ -937,28 +937,24 @@ select{
     background: #70aade;
 }
 /*fix*/
-.b-replies {
-    position: absolute;
-    right: 1px;
-    padding: 1px 6px 3px 12px;
+@media screen and (min-width: 1024px) {
+	.b-replies {
+    	  position: absolute;
+    	  right: 1px;
+    	  padding: 1px 6px 3px 12px;
+	}
+	.b-comment>.inner header .name-date {
+    	  line-height: 2;
+	}
+	.b-comment>.inner {
+    	  min-height: 64px;
+	}
+	.b-comment{
+	  overflow: inherit;
+	}
 }
-.b-comment>.inner header .name-date {
-    line-height: 2;
-}
-/*
-.b-message>.inner header {
-    margin-bottom: 4px;
-}
-.b-topic>.inner header {
-    margin-bottom: 7px;
-}*/
 
-.b-comment>.inner {
-    min-height: 64px;
-}
-.b-comment{
-	overflow: inherit;
-}
+
 /*кнопка меню на мобильном*/
 .l-page .menu-toggler .toggler{
     background: #e3f0fb;
