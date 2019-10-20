@@ -1151,6 +1151,10 @@ div#rates_statuses_stats.bar.simple.horizontal div.bar.s0.min{
     padding: 1px 7px !important;
     margin:0 2px; 
 }
+/*разделитель */
+.b-status-line .section:not(:last-child):after {
+    display: none;
+}
 .b-topic .footer-vote {
     background: #e3f0fb;
     border: 1px solid #e3f0fb;
