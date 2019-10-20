@@ -960,6 +960,7 @@ select{
     background: #e3f0fb;
     color: #70aade;
     border-radius: 7px;
+    border: 1px solid #70aade1c;
 }
 .l-page .menu-toggler .toggler:after{
     color: #70aade;
