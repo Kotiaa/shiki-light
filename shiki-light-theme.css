@@ -524,6 +524,7 @@ div.history .b-block_list li .tooltip-inner a:active,
 }
 
 /*теги*/
+.b-topic > .inner footer .b-anime_status_tag.other,
 .b-anime_status_tag{
     border-radius: 4px !important;
 }
