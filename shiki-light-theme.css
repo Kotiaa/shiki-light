@@ -564,7 +564,8 @@ div.history .b-block_list li .tooltip-inner a:active,
 }
 /*округление постеров*/
 .b-catalog_entry .cover .image-decor img,.p-profiles .profile-head .c-history .entry img,.b-db_entry-variant-list_item .image img,.b-menu_logo img,.b-topic>.inner header img,.b-db_entry>.c-image img,
-.b-topic.b-news_wall-topic.b-news-topic>.inner footer .b-shiki_swiper{
+.b-topic.b-news_wall-topic.b-news-topic>.inner footer .b-shiki_swiper,
+.p-dashboards-show .v2 .generated-news-line .poster img{
     border-radius: 4px;
 }
 /*округление аватарок*/
