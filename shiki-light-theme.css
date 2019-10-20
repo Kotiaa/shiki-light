@@ -485,8 +485,12 @@ div.history .b-block_list li .tooltip-inner a:active,
     border-radius: 7px;
     text-align:center;
 }
+/*
 .p-dashboards-show .subheadline.orange a{
   color: #70aade;
+}*/
+.p-dashboards-show .v2 .subheadline.orange a {
+    color: inherit;
 }
 .headline.linkheadline>a, .linkheadline.midheadline>a, .linkheadline.subheadline>a {
     text-decoration:none;
