@@ -1149,7 +1149,7 @@ div#rates_statuses_stats.bar.simple.horizontal div.bar.s0.min{
     color: #70aade;
     border-radius: 7px;
     padding: 1px 7px !important;
-    margin:0 2px; 
+    margin: 0 2px 3px 2px;
 }
 /*разделитель */
 .b-status-line .section:not(:last-child):after {
