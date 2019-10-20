@@ -488,6 +488,10 @@ div.history .b-block_list li .tooltip-inner a:active,
 .p-dashboards-show .v2 .subheadline.orange a {
     color: inherit;
 }
+/*иконка в заголовке новости на главной странице*/
+.p-dashboards-show .v2 .headline .buttons .options{
+   color: #70aade;
+}
 .headline.linkheadline>a, .linkheadline.midheadline>a, .linkheadline.subheadline>a {
     text-decoration:none;
 }
