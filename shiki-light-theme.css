@@ -399,7 +399,8 @@ header.head a.edit:hover,
 .b-bb_codes-examples .example a:hover,
 .b-bb_codes-examples .result a:hover,
 .p-dashboards-show .headline .buttons .options:hover, 
-.b-topic.b-news_wall-topic.b-news-topic>.inner>a:hover .name-date .name{
+.b-topic.b-news_wall-topic.b-news-topic>.inner>a:hover .name-date .name,
+.b-news_wall-topic>a:hover .title{
     color:#b78bc7 !important;
     border-bottom-color:none !important;
     border-bottom: none !important;
@@ -447,7 +448,8 @@ div.history .b-block_list li .tooltip-inner a:active,
 .b-edit_styles .new_style .style_css .editor-collapse:active,
 .b-form a.remove:active,
 .p-dashboards-show .headline .buttons .options:active,
-.b-topic.b-news_wall-topic.b-news-topic>.inner>a:active .name-date .name{ 
+.b-topic.b-news_wall-topic.b-news-topic>.inner>a:active .name-date .name,
+.b-news_wall-topic>a:active .title{ 
     color:#cc7fd0 !important;
     text-decoration:none !important;
     border-bottom-color: none !important;
