@@ -487,7 +487,8 @@ div.history .b-block_list li .tooltip-inner a:active,
     border-radius: 7px;
     text-align:center;
 }
-.p-dashboards-show .v2 .subheadline.orange a {
+.p-dashboards-show .v2 .subheadline.orange a,
+.p-dashboards-show .v2 .headline.orange a{
     color: inherit;
 }
 /*иконка в заголовке новости на главной странице*/
