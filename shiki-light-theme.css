@@ -507,6 +507,10 @@ div.history .b-block_list li .tooltip-inner a:active,
     text-align:center;
     border-left:inherit;
 }
+@media screen and (min-width:1025px){
+  .subheadline {
+      line-height: 2;}
+}
 #profiles_edit .headline,#profiles_edit .midheadline,#profiles_edit .subheadline,
 .p-db_entries-show .cc-related-authors > .c-column .subheadline:nth-child(2){
       text-align:left !important;
