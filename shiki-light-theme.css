@@ -400,7 +400,8 @@ header.head a.edit:hover,
 .b-bb_codes-examples .result a:hover,
 .p-dashboards-show .headline .buttons .options:hover, 
 .b-topic.b-news_wall-topic.b-news-topic>.inner>a:hover .name-date .name,
-.b-news_wall-topic>a:hover .title{
+.b-news_wall-topic>a:hover .title,
+.b-news_line-topic>a:hover .title{
     color:#b78bc7 !important;
     border-bottom-color:none !important;
     border-bottom: none !important;
@@ -449,7 +450,8 @@ div.history .b-block_list li .tooltip-inner a:active,
 .b-form a.remove:active,
 .p-dashboards-show .headline .buttons .options:active,
 .b-topic.b-news_wall-topic.b-news-topic>.inner>a:active .name-date .name,
-.b-news_wall-topic>a:active .title{ 
+.b-news_wall-topic>a:active .title,
+.b-news_line-topic>a:active.title{ 
     color:#cc7fd0 !important;
     text-decoration:none !important;
     border-bottom-color: none !important;
@@ -1148,6 +1150,7 @@ div#rates_statuses_stats.bar.simple.horizontal div.bar.s0.min{
 .b-review_votes {
     font-size: 12px;
 }
+/*голубые теги*/
 .b-status-line .section {
     border-left: none;
     background: #e3f0fb;
@@ -1326,6 +1329,29 @@ input[type=checkbox]:checked:disabled,.b-input input[type=checkbox]:checked:disa
 .p-profiles-favorites .cc-favourites.sortable .b-catalog_entry:hover:before{
   background: #70aade;
   color:#fff;
+}
+
+/*голубые теги на главной странице*/
+.b-news_line-topic .status-line .author,
+.b-news_line-topic .status-line time,
+.b-news_line-topic .status-line .comments{
+    border-left: none;
+    background: #e3f0fb;
+    border: 1px solid #e3f0fb;
+    color: #70aade;
+    border-radius: 7px;
+    padding: 1px 7px !important;
+    margin: 0 2px 3px 2px;
+}
+
+.b-news_wall-topic .status-line .comments,
+.b-news_wall-topic .status-line time{
+    border-left: none;
+    background: #e3f0fb;
+    border: 1px solid #e3f0fb;
+    color: #70aade;
+    border-radius: 7px;
+    padding: 1px 7px !important;
 }
 
 /*small fix*/
