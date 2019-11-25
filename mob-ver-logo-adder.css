@@ -1,0 +1,7 @@
+/*Добавляет лого (ссылка на главноую страницу) в мобильной версии */
+
+@media screen and (max-width: 480px) {
+.l-top_menu-v2 .logo-container .glyph {
+    display: block !important;
+	}
+}
